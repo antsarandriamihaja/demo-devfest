@@ -74,12 +74,16 @@ def get_prediction(data):
 
 
 def run():
-    base_path = '../Data'
-    random_image_path = get_random_image(base_path)
-    print(random_image_path)
-    x = get_pred_data(random_image_path)
-    prediction = get_prediction(x)
-    print(prediction)
+    try:
+        base_path = '../Data'
+        random_image_path = get_random_image(base_path)
+        print(random_image_path)
+        x = get_pred_data(random_image_path)
+        prediction = get_prediction(x)
+        print(prediction)
+    except Exception:
+        error_client = error_reporting.Client()
+        error_client.report_exception()
 
 run()
 
