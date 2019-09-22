@@ -85,4 +85,3 @@ def run():
     keras_to_savedmodel.convert(f'{filename}.h5', f'{filename}.json', export_path)
     ai_platform.create_model_version(model_name, model_version, project_id, deployment_uri)
 
-get_data(10)
