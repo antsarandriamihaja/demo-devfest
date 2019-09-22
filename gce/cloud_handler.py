@@ -52,7 +52,7 @@ class CloudLoggingHandler(logging.Handler):
 
     def __init__(self,
                  credentials=None,
-                 logname='pr_international',
+                 logname='antsa-demo-devfest',
                  labels={},
                  project_id=None,
                  on_gce=False,
