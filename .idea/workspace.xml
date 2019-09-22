@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c010602d-5f7f-48d1-8aab-7326a0728ff7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/gce/cloud_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/gce/cloud_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,24 +24,27 @@
           <entry key="jpg" value="9" />
           <entry key="json" value="1" />
           <entry key="py" value="9" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="9" />
           <entry key="JSON" value="1" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
           <entry key="Python" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2205" />
+          <entry key="py" value="2206" />
+          <entry key="txt" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2205" />
+          <entry key="PLAIN_TEXT" value="29" />
+          <entry key="Python" value="2206" />
         </counts>
       </usages-collector>
     </session>
@@ -63,26 +66,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gce/predict.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="80" column="44" lean-forward="true" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="44" />
+            <state relative-caret-position="30">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
               <folding>
-                <element signature="e#1#19#0" expanded="true" />
-                <marker date="1569169250224" expanded="true" signature="294:1533" ph="..." />
-                <marker date="1569169250224" expanded="true" signature="2025:2406" ph="..." />
-                <marker date="1569169250224" expanded="true" signature="2425:2434" ph="..." />
+                <marker date="1569170274723" expanded="true" signature="277:1516" ph="..." />
+                <marker date="1569170274723" expanded="true" signature="2008:2389" ph="..." />
+                <marker date="1569170274723" expanded="true" signature="2408:2417" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gce/cron_executor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="57" column="18" lean-forward="true" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+              <folding>
+                <element signature="e#621#650#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gce/cron_executor.py">
+        <entry file="file://$PROJECT_DIR$/gce/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="234" column="20" selection-start-line="234" selection-start-column="20" selection-end-line="234" selection-end-column="20" />
-              <folding>
-                <element signature="e#621#650#0" expanded="true" />
-              </folding>
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -99,11 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gce/cloud_handler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="132" column="75" selection-start-line="132" selection-start-column="75" selection-end-line="132" selection-end-column="75" />
+            <state relative-caret-position="338">
+              <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
               <folding>
                 <element signature="e#622#651#0" expanded="true" />
               </folding>
@@ -138,8 +149,9 @@
         <option value="$PROJECT_DIR$/model/mnist.py" />
         <option value="$PROJECT_DIR$/gce/cron_executor.py" />
         <option value="$PROJECT_DIR$/gce/utility_executor.py" />
-        <option value="$PROJECT_DIR$/gce/predict.py" />
         <option value="$PROJECT_DIR$/gce/cloud_handler.py" />
+        <option value="$PROJECT_DIR$/gce/predict.py" />
+        <option value="$PROJECT_DIR$/gce/requirements.txt" />
       </list>
     </option>
   </component>
@@ -293,25 +305,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gce/predict.py">
+    <entry file="file://$PROJECT_DIR$/gce/cloud_handler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="80" column="44" lean-forward="true" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="44" />
+        <state relative-caret-position="338">
+          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
           <folding>
-            <element signature="e#1#19#0" expanded="true" />
-            <marker date="1569169250224" expanded="true" signature="294:1533" ph="..." />
-            <marker date="1569169250224" expanded="true" signature="2025:2406" ph="..." />
-            <marker date="1569169250224" expanded="true" signature="2425:2434" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gce/cron_executor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="234" column="20" selection-start-line="234" selection-start-column="20" selection-end-line="234" selection-end-column="20" />
-          <folding>
-            <element signature="e#621#650#0" expanded="true" />
+            <element signature="e#622#651#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -326,12 +325,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gce/cloud_handler.py">
+    <entry file="file://$PROJECT_DIR$/gce/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="132" column="75" selection-start-line="132" selection-start-column="75" selection-end-line="132" selection-end-column="75" />
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gce/predict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
           <folding>
-            <element signature="e#622#651#0" expanded="true" />
+            <marker date="1569170274723" expanded="true" signature="277:1516" ph="..." />
+            <marker date="1569170274723" expanded="true" signature="2008:2389" ph="..." />
+            <marker date="1569170274723" expanded="true" signature="2408:2417" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gce/cron_executor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="57" column="18" lean-forward="true" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+          <folding>
+            <element signature="e#621#650#0" expanded="true" />
           </folding>
         </state>
       </provider>

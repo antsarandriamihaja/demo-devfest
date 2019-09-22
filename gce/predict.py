@@ -23,11 +23,11 @@ def predict(model_name, project, data, model_version='v2'):
     :param model_version: model version you want to make the request to
     :return: prediction:
     """
-    project_id = f"projects/{project}"
+    project_id = "projects/{}".format(project)
     service = discovery.build('ml', 'v1')
-    name = f"{project_id}/models/{model_name}"
+    name = "{}/models/{}".format(project_id, model_name)
     if model_version is not None:
-        name += f"/versions/{model_version}"
+        name += "/versions/{}".format(model_version)
     data_pred = json.loads(data)
     instances = data_pred['instances']
 
