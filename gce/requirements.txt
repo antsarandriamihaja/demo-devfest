@@ -1,0 +1,7 @@
+numpy==1.17.2
+Keras==2.3.0
+httplib2==0.13.1
+google_api_python_client==1.7.11
+protobuf==3.9.1
+model==0.6.0
+google-cloud-error-reporting
