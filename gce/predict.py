@@ -25,7 +25,7 @@ def get_random_image(base_path):
 
 
 #@pysnooper.snoop()
-def predict(model_name, project, data, model_version=None):
+def predict(model_name, project, data, model_version='v2'):
     """
     Makes API call to AI Platform and returns prediction.
     :param model_name: REQUIRED. STRING. Name of model on AI Platform.
@@ -47,8 +47,9 @@ def predict(model_name, project, data, model_version=None):
             name=name,
             body={"instances": instances}
         ).execute()
-        print(response['predictions']) # example prediction = [{'output': [0.4796813130378723]}]
+        print(response['predictions'])
         return response['predictions']
+        # print(response)
     except Exception:
         error_client = error_reporting.Client()
         error_client.report_exception()
@@ -57,13 +58,11 @@ def predict(model_name, project, data, model_version=None):
 @pysnooper.snoop()
 def get_pred_data(random_image_path):
     img_width, img_height = 28, 28
-    img = load_img(random_image_path,False,target_size=(img_width,img_height))
+    img = load_img(random_image_path,color_mode='grayscale',target_size=(img_width,img_height, 1))
     x = img_to_array(img)
     x = np.expand_dims(x, axis=0)
+    print(x.shape)
     return x
-    # preds = test_model.predict_classes(x)
-    # prob = test_model.predict_proba(x)
-    # print(preds, prob)
 
 class NumpyEncoder(json.JSONEncoder):
     def default(self, obj):
@@ -86,6 +85,6 @@ def run():
     x = get_pred_data(random_image_path)
     get_prediction(x)
 
-# run()
+run()
 
 

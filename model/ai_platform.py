@@ -57,7 +57,7 @@ def create_version(model_name, version_name, project_id, deployment_uri):
     request_dict = {
         'name': version_name,
         'deploymentUri': f"{deployment_uri}",
-        'runtimeVersion': '1.9',
+        'runtimeVersion': '1.14',
         'framework': 'TENSORFLOW',
         'pythonVersion': '3.5'
     }
