@@ -71,15 +71,31 @@ def get_prediction(data):
             prediction['Probability'] = pred
     return prediction
 
+def make_decision(sum):
+
+    if sum > 35:
+        decision = "Sell"
+    elif sum < 10:
+        decision = "Buy"
+    else:
+        decision = "Hold"
+
+    return decision
 
 def run():
     try:
         base_path = '../Data'
-        random_image_path = get_random_image(base_path)
-        print(random_image_path)
-        x = get_pred_data(random_image_path)
-        prediction = get_prediction(x)
-        print(prediction)
+        i = 0
+        sum = 0
+        while i < 4:
+            random_image_path = get_random_image(base_path)
+            x = get_pred_data(random_image_path)
+            prediction = get_prediction(x)
+            sum += prediction['Class']
+            i += 1
+        print("ML prediction output is: " + str(sum))
+        decision = make_decision(sum)
+        print("Recommendation: " + decision + " commodity.")
     except Exception:
         error_client = error_reporting.Client()
         error_client.report_exception()

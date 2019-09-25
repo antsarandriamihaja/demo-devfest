@@ -197,7 +197,6 @@ class Executor():
 
         retcode = proc.poll()
         if retcode is not None:
-            # TODO if error - expire lease immediately?
             # process exited
             log.debug("process ended")
         return retcode
@@ -208,18 +207,8 @@ class Executor():
             log.debug("processing %s" % received_message.get('ackId'))
             if pubsub_message:
                 ack_ids = []
-                # Process messages
-                # Note the design here is to run a single task at a time
-                # print base64.urlsafe_b64decode(
-                # str(pubsub_message.get('data')))
-                # Get the message's ack ID
-                cmd_retcode = self.run_task(received_message)
-                # TODO if cmd_retcode == 0, the cmd exited clean
-                # the retry logic could get complex and is left as an exercise
+                self.run_task(received_message)
                 ack_ids.append(received_message.get('ackId'))
-                # in this case - should ack per message instead of batch
-                # as want to make sure task is acked after completion, as
-                # nothing else will extend
                 # Create a POST body for the acknowledge request
                 ack_body = {'ackIds': ack_ids}
                 if ack_ids:
@@ -234,5 +223,6 @@ class Executor():
             msgs = self.get_messages()
             if msgs:
                 self.process_messages(msgs)
+
             # when return immediately is False-  there is about a 90second open
             # request

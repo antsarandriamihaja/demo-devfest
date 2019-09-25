@@ -3,13 +3,18 @@ import os
 import sys
 
 from cloud_handler import CloudLoggingHandler
+
 from cron_executor import Executor
 
-PROJECT = 'antsa-demo-devfest'
-TOPIC = 'antsa-mnist-demo' #pub sub topic
 
+PROJECT = 'antsa-demo-devfest'
+# pub sub topic
+TOPIC = 'antsa-mnist-demo'
+
+# path to script to execute
 script_path = os.path.abspath(os.path.join(os.getcwd(), 'predict.py'))
 
+# cmd to execute
 sample_task = "nohup python3 -u %s & \nexit" % script_path
 
 
