@@ -96,11 +96,10 @@ def run():
         decision = make_decision(sum)
         to_print_1 = "ML prediction output is: " + str(sum)
         to_print_2 = "Recommendation: " + decision + " commodity."
+        print("****************************************")
         print(to_print_1)
-        sys.stdout(to_print_1)
-
         print(to_print_2)
-        sys.stdout(to_print_2)
+        print("****************************************")
     except Exception:
         error_client = error_reporting.Client()
         error_client.report_exception()
