@@ -93,9 +93,14 @@ def run():
             prediction = get_prediction(x)
             sum += prediction['Class']
             i += 1
-        print("ML prediction output is: " + str(sum))
         decision = make_decision(sum)
-        print("Recommendation: " + decision + " commodity.")
+        to_print_1 = "ML prediction output is: " + str(sum)
+        to_print_2 = "Recommendation: " + decision + " commodity."
+        print(to_print_1)
+        sys.stdout(to_print_1)
+
+        print(to_print_2)
+        sys.stdout(to_print_2)
     except Exception:
         error_client = error_reporting.Client()
         error_client.report_exception()
